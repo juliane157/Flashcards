@@ -78,7 +78,6 @@
     }
     
     .cartao:hover_.cartao__conteudo {
-    
     transform: rotateY(180deg);
     }
     
@@ -88,4 +87,25 @@
     }
     .cartao__conteudo__resposta {
     transform: rotateY(180deg);
+    background-color: rgba(0, 244, 191, 0.2);
+    border: 4px solid var(--card-back-color);
+    }
+
+    @media (max-width: 560px){
+
+        body {
+            background: url('img/bg-mobile.webp');
+        }
+
+        .cartao{
+            flex: 1 0 calc(100%-1rem);
+        }
+
+        .cartao__conteudo h3{
+            font-size: 3vw;
+        }
+
+        .cartao__conteudo p{
+            font-size: 3.8vw;
+        }
     }
